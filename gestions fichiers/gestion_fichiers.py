@@ -2,6 +2,7 @@ import os;
 import os.path;
 import glob;
 import shutil; 
+import time
 
 formatsfiles= ("bmp","xlsx","docx","txt","png","jpg","pptx")
 directory_src_one = r"D:\\Cours_bloc_MA2\test_Langage_Script\source"
@@ -51,6 +52,8 @@ def conception(listOfFolders,formatsfiles_,destination):
                     except FileNotFoundError:
                         print("error")
 
-createFolder(formatsfiles,destination_folder)
-conception(listOfFolder,formatsfiles,destination_folder)
+while(True):                        
+    createFolder(formatsfiles,destination_folder)
+    conception(listOfFolder,formatsfiles,destination_folder)
+    time.sleep(600)
        
