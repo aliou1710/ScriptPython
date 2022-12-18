@@ -9,7 +9,7 @@ from flask import send_file,render_template,request
 #les dossiers à sauvegarder
 folder = [r"D:\\scripts\Analysevisuelle",r"D:\\scripts\Bureau_etudes"]
 #les formats de fichiers qu'on veut stocker
-formatsfile = [".txt",".cs","png","jpg"]
+formatsfile = [".txt",".cs",".png",".jpg"]
 
 #recuperer un file
 def getfile():
